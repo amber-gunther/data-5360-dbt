@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: oliver_dim_customer
+    description: "Insurance customer Dimension"
+  - name: oliver_dim_date
+    description: "Insurance date Dimension"
+  - name: oliver_dim_employee
+    description: "Insurance employee Dimension"
+  - name: oliver_dim_product
+    description: "Insurance product Dimension"
+  - name: oliver_dim_store
+    description: "Insurance store Dimension"
+  - name: oliver_fact_sale
+    description: "Insurance sale Fact"
