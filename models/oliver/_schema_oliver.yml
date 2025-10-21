@@ -13,3 +13,7 @@ models:
     description: "Insurance store Dimension"
   - name: oliver_fact_sale
     description: "Insurance sale Fact"
+  - name: fact_certifications
+    description: "this is a connection between the employee certification 
+      tables and also includes connections for date and employee
+      dims"
