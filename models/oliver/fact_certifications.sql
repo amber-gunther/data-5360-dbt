@@ -1,6 +1,6 @@
 {{ config(
     materialized = 'table',
-    schema = 'dw_insurance'
+    schema = 'dw_oliver' 
 )}}
 
 select
