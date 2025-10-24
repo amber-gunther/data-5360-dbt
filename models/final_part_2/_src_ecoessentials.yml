@@ -1,0 +1,8 @@
+Version: 2
+
+sources:
+  - name: ecoessentials_landing
+    database: group3project
+    schema: final_part_2_source
+    tables: 
+      - name: marketing_emails
