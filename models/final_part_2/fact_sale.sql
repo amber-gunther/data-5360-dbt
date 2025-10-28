@@ -1,10 +1,12 @@
 {{ config(
     materialized = 'table',
-    schema = 'final_part_2' 
-)}}
+    database = 'group3project',
+    schema = 'final_part_2'
+    )
+}}
 
 select
-    c.campaign_key,
+    --c.campaign_key,
     --p.product_key,
     cu.customer_key,
     d.date_key,
