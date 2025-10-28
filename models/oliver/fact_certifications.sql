@@ -1,5 +1,6 @@
 {{ config(
     materialized = 'table',
+    database = 'group3project',
     schema = 'dw_oliver' 
 )}}
 
