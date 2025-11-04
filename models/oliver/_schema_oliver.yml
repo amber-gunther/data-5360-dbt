@@ -7,12 +7,34 @@ models:
     description: "Insurance date Dimension"
   - name: oliver_dim_employee
     description: "Insurance employee Dimension"
+    columns:
+      - name: employee_key
+        tests:
+          - unique
   - name: oliver_dim_product
     description: "Insurance product Dimension"
+    columns:
+        - name: product_key
+          tests:
+            - not_null
   - name: oliver_dim_store
     description: "Insurance store Dimension"
+    columns:
+      - name: store_name
+        tests:
+          - accepted_values:
+              values:
+                - Franks Corner
+                - North Skagway
+                - East Gilbert
   - name: oliver_fact_sale
     description: "Insurance sale Fact"
+    columns:
+      - name: cust_key
+        tests:
+          - relationships:
+              field: cust_key
+              to: ref('oliver_dim_customer')
   - name: fact_certifications
     description: "this is a connection between the employee certification 
       tables and also includes connections for date and employee
